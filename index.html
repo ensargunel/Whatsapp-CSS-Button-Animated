@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Whatsapp Button Animated</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <style>
+        .wp-box {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            display: inline-block;
+        }
+        .wp-box .box-fx {
+            text-align: center;
+            background-color: #4caf50;
+            transform-origin: center;
+            border-radius: 500px;
+            z-index: 60;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -30px;
+            margin-top: -30px;
+        }
+        .wp-box .box-fx i {
+            line-height: 60px;
+            font-size: 36px;
+            color: #fff;
+            font-weight: normal
+        }
+        .wp-box .box-1 {
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-color: #8bc34a;
+            transform-origin: center;
+            border-radius: 500px;
+            z-index: 20;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: 0;
+            margin-top: 0;
+        }
+        .wp-box .box-2 {
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            background-color: #4caf50;
+            transform-origin: center;
+            border-radius: 500px;
+            z-index: 30;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: 0;
+            margin-top: 0;
+        }
+        .wp-box .bounce-2 {
+            animation-name: bounce-2;
+            animation-timing-function: ease;
+        }
+        @keyframes bounce-2 {
+            0% {
+                width: 0px;
+                height: 0px;
+            }
+            80% {
+                width: 100px;
+                height: 100px;
+                margin-left: -50px;
+                margin-top: -50px;
+            }
+            100% {
+                opacity: 0
+            }
+        }
+        .custom-whatsapp {
+            position: fixed;
+            width: 80px;
+            height: 80px;
+            bottom: 5px;
+            left: 3%;
+            z-index: 5000;
+            text-align: center
+        }
+        .custom-whatsapp p {
+            position: relative;
+            z-index: 80;
+            font-size: 11px;
+            display: inline-block;
+            background: #fff;
+            padding: 8px;
+            border-radius: 30px;
+            line-height: 15px;
+        }
+    </style>
+</head>
+
+<body style="background-color: white;">
+
+<div class="custom-whatsapp">
+    <div class="wp-box">
+        <div class="box-2 bounce-2"></div>
+        <div class="box-1 bounce-2"></div>
+        <a href="https://wa.me/90532"
+           target="_blank">
+            <div class="box-fx"><i class="fab fa-whatsapp"></i></div>
+        </a>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
